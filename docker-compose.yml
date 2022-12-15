@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  app:
+    build: ./app
+    command: yarn start_prod
+    ports:
+      - "80:80"
+    volumes:
+      - .:/app
